@@ -1,0 +1,32 @@
+﻿@model  List<Category>
+@{
+    ViewBag.Title = "Index";
+}
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+
+                <th scope="col">Ad</th>
+                <th scope="col"><a href="@Url.Action("Create", "Category")">Yeni kateqoriya əlavə et</a></th>
+                
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>
+                        <a href="@Url.Action("Details", "Category", new { id = item.Id})">Ətraflı</a>
+                        <a href="@Url.Action("Delete", "Category", new { id = item.Id })">Sil</a>
+                        <a href="@Url.Action("Edit", "Category", new { id = item.Id })">Yenilə</a>
+                    </td>
+
+                    </tr>
+                    }
+
+
+            </tbody>
+    </table>

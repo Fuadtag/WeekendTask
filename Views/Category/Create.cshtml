@@ -1,0 +1,21 @@
+﻿@model Category
+@{
+    ViewBag.Title = "Create";
+}
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <h3>Yeni Tələbə</h3>
+        <a href="@Url.Action("index","category")" class="btn btn-outline-primary">Geri</a>
+    </div>
+    <div class="card-body">
+
+        <form method="post" id="createStudent">
+            <div class="form-group">
+                @Html.LabelFor(m => m.Name)
+                @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+            </div>
+            <button type="submit" class="btn btn-outline-primary float-right">Əlavə et</button>
+        </form>
+    </div>
+</div>

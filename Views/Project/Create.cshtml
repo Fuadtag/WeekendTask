@@ -1,0 +1,17 @@
+﻿@model Project
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Yeni Proyekt yarat</h2>
+<div>
+    
+    @Html.TextBoxFor(p => p.Name, new { @class = "form-control" });
+    @Html.DropDownListFor(m => m.Category,
+                    new SelectList(ViewBag.Categories)),
+                    "Kateqoriya seçin")
+
+    @Html.TextAreaFor(p => p.Name, new { @class = "form-control" });
+
+
+</div>

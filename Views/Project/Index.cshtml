@@ -1,0 +1,39 @@
+﻿@model List<Project>
+
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+
+            <th scope="col">Ad</th>
+            <th scope="col">Kateqoriya</th>
+            <th scope="col">Tarix</th>
+            <th scope="col">Açıqlama</th>
+            
+            <th scope="col"><a href="@Url.Action("Create", "Project")">Yeni kateqoriya əlavə et</a></th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Category.Name</td>
+            <td>@item.PublishDate</td>
+            <td>@item.Description</td>
+            <td>
+                <a href="@Url.Action("Details", "Project", new { id = item.Id})">Ətraflı</a>
+                <a href="@Url.Action("Delete", "Project", new { id = item.Id })">Sil</a>
+                <a href="@Url.Action("Edit", "Project", new { id = item.Id })">Yenilə</a>
+            </td>
+
+        </tr>
+        }
+
+
+    </tbody>
+</table>
+
