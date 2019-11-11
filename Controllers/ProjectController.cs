@@ -21,7 +21,7 @@ namespace _08_11_2019WeekendTask.Controllers
         [HttpGet]
         public ActionResult Create()
         {
-            
+            ViewBag.Categories = context.Categories.ToList();
             return View();
 
         }
@@ -29,7 +29,7 @@ namespace _08_11_2019WeekendTask.Controllers
         public ActionResult Create(Project project)
         {
             project.PublishDate = DateTime.Now;
-            project.Categories = context.Categories.ToList() ;
+            
             if (context.Projects.Any(p => p.Name == project.Name))
             {
                 ModelState.AddModelError("name", "Bu adda proyekt mövcuddur");
@@ -42,7 +42,7 @@ namespace _08_11_2019WeekendTask.Controllers
                 return RedirectToAction("index", "project");
             }
 
-            return Content(project.Categories.ToString());
+            return View();
         }
     }
 }

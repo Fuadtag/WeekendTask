@@ -27,7 +27,7 @@ namespace _08_11_2019WeekendTask.Models
         [Display(Name ="Açıqlama")]
         public string Description { get; set; }
 
-        public List<Category> Categories{ get; set; }
+        
 
     }
 }

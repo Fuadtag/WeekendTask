@@ -83,3 +83,4 @@ C:\Users\USER\source\repos\08-11-2019WeekendTask\obj\Debug\08-11-2019WeekendTask
 C:\Users\USER\source\repos\08-11-2019WeekendTask\obj\Debug\_08_11_2019WeekendTask.Migrations.AttributesAdded.resources
 C:\Users\USER\source\repos\08-11-2019WeekendTask\obj\Debug\_08_11_2019WeekendTask.Migrations.AttributesModified.resources
 C:\Users\USER\source\repos\08-11-2019WeekendTask\obj\Debug\_08_11_2019WeekendTask.Migrations.AddedCategoryListToProject.resources
+C:\Users\USER\source\repos\08-11-2019WeekendTask\obj\Debug\_08_11_2019WeekendTask.Migrations.TablesModified.resources

@@ -152,6 +152,10 @@
     <Compile Include="Migrations\201911091503547_AddedCategoryListToProject.Designer.cs">
       <DependentUpon>201911091503547_AddedCategoryListToProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911110434308_TablesModified.cs" />
+    <Compile Include="Migrations\201911110434308_TablesModified.Designer.cs">
+      <DependentUpon>201911110434308_TablesModified.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Project.cs" />
@@ -264,6 +268,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911091503547_AddedCategoryListToProject.resx">
       <DependentUpon>201911091503547_AddedCategoryListToProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911110434308_TablesModified.resx">
+      <DependentUpon>201911110434308_TablesModified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
